@@ -25,8 +25,8 @@ function ProductList({ search, sort }) {
       size: pageSize,
     };
 
-    if (search) params.name = search;
-    if (sort) params.order = sort === "latest" ? "recent" : "like";
+     if (search) params.keyword = search; 
+     if (sort) params.orderBy = sort === "latest" ? "recent" : "favorite"; 
 
     console.log("👉 API 요청 params:", params);
 

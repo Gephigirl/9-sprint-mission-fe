@@ -7,7 +7,7 @@ const BestProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetchProducts({ sort: "like", page: 1, pageSize: 8 }).then((data) => {
+    fetchProducts({ orderBy: "favorite", page: 1, pageSize: 8 }).then((data) => {
       const sorted = data.list
       .sort((a, b) => b.likeCount - a.likeCount)
       .slice(0, 4);

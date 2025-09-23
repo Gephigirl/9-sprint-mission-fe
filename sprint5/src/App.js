@@ -7,9 +7,8 @@ import TopBar from "./components/TopBar";
 import "./App.css"; 
 
 function App() {
-  // 서버에서 지원하는 값으로 초기화
   const [search, setSearch] = useState("");
-  const [sort, setSort] = useState("recent"); // "recent" 또는 "like"
+  const [sort, setSort] = useState("recent"); 
 
   const handleRegisterClick = () => {
     console.log("상품 등록 클릭됨!");
